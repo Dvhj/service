@@ -12,25 +12,29 @@
 </head>
 <body>
 	<main>
-		<nav>
-			<div class="logo">
-				<h1>F.</h1>
-			</div>
-			<div class="icons">
-				<img src="src/home.png" alt="">
-				<img src="src/lesson.png" alt="">
-				<img src="src/profile.png" alt="">
-				<img src="src/message.png" alt="">
-				<img src="src/settings.png" alt="">
-			</div>
-			<div class="exit">
-				<img src="src/exit.png" alt="">
-			</div>
-		</nav>
+		<div class="navbar">
+			<nav>
+				<div class="logo">
+					<h1>F.</h1>
+				</div>
+				<div class="icons">
+					<img src="src/home.png" alt="">
+					<img src="src/lesson.png" alt="">
+					<img src="src/profile.png" alt="">
+					<img src="src/message.png" alt="">
+					<img src="src/settings.png" alt="">
+				</div>
+				<div class="exit">
+					<img src="src/exit.png" alt="">
+				</div>
+			</nav>
+		</div>
 		<section>
 			<div class="hello_box">
-				<p class='hello_box__title'>Hello Danil!</p>
-				<p class='hello_box__subtitle'>It’s good to see you again.</p>
+				<div class="hello_box__text">
+					<p class='hello_box__title'>Hello Danil!</p>
+					<p class='hello_box__subtitle'>It’s good to see you again.</p>
+				</div>
 				<div class="hello_man"></div>
 			</div>
 			<div class="chosen_course">
@@ -61,18 +65,152 @@
 					</ul>
 				</div>
 				<div class="courses__blocks">
-					<div class="courses_block"></div>
-					<div class="courses_block"></div>
-					<div class="courses_block"></div>
-					<div class="courses_block"></div>
-					<div class="courses_block"></div>
+					<div class="courses_block">
+						<div class="courses__logo">
+							<img src="src/figma.png" alt="">
+						</div>
+						<div class="chosen_course_name">
+							<p class='courses__title'>Learn Figma</p>
+							<p class='courses__subtitle'>by Christopher Morgan</p>
+						</div>
+						<div class="courses__duration">
+							<img src="src/clock.png" alt="">
+							<p class="duration_time">6h 30min</p>
+						</div>
+						<div class="courses__rating">
+							<img src="src/fire.png" alt="">
+							<p class="rating_score">4,9</p>
+						</div>
+						<div class="courses__button_view">
+							<span>View course</span>
+						</div>
+					</div>
+					<div class="courses_block">
+						<div class="courses__logo">
+							<img src="src/photo.png" alt="">
+						</div>
+						<div class="chosen_course_name">
+							<p class='courses__title'>Analog photography</p>
+							<p class='courses__subtitle'>by Gordon Norman</p>
+						</div>
+						<div class="courses__duration">
+							<img src="src/clock.png" alt="">
+							<p class="duration_time">3h 15min</p>
+						</div>
+						<div class="courses__rating">
+							<img src="src/fire.png" alt="">
+							<p class="rating_score">4,7</p>
+						</div>
+						<div class="courses__button_view">
+							<span>View course</span>
+						</div>
+					</div>
+					<div class="courses_block">
+						<div class="courses__logo">
+							<img src="src/instagram.png" alt="">
+						</div>
+						<div class="chosen_course_name">
+							<p class='courses__title'>Master Instagram</p>
+							<p class='courses__subtitle'>by Sophie Gill</p>
+						</div>
+						<div class="courses__duration">
+							<img src="src/clock.png" alt="">
+							<p class="duration_time">7h 40min</p>
+						</div>
+						<div class="courses__rating">
+							<img src="src/fire.png" alt="">
+							<p class="rating_score">4,6</p>
+						</div>
+						<div class="courses__button_view">
+							<span>View course</span>
+						</div>
+					</div>
+					<div class="courses_block">
+						<div class="courses__logo">
+							<img src="src/pen.png" alt="">
+						</div>
+						<div class="chosen_course_name">
+							<p class='courses__title'>Basics of drawing</p>
+							<p class='courses__subtitle'>by Jean Tate</p>
+						</div>
+						<div class="courses__duration">
+							<img src="src/clock.png" alt="">
+							<p class="duration_time">11h 30min</p>
+						</div>
+						<div class="courses__rating">
+							<img src="src/fire.png" alt="">
+							<p class="rating_score">4,8</p>
+						</div>
+						<div class="courses__button_view">
+							<span>View course</span>
+						</div>
+					</div>
+					<div class="courses_block">
+						<div class="courses__logo">
+							<img src="src/photoshop.png" alt="">
+						</div>
+						<div class="chosen_course_name">
+							<p class='courses__title'>Photoshop - Essence</p>
+							<p class='courses__subtitle'>by David Green</p>
+						</div>
+						<div class="courses__duration">
+							<img src="src/clock.png" alt="">
+							<p class="duration_time">5h 35min</p>
+						</div>
+						<div class="courses__rating">
+							<img src="src/fire.png" alt="">
+							<p class="rating_score">4,7</p>
+						</div>
+						<div class="courses__button_view">
+							<span>View course</span>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="info_box"></div>
+			<div class="info_box">
+				<div class="info_box__search">
+					<img src="src/loop.png" alt="">
+					<input type="text">
+				</div>
+				<div class="info_box__notification">
+					<img src="src/notify.png" alt="">
+				</div>
+				<div class="info_box__profile">
+					<img src="src/avatar.png" alt="">
+					<img src="src/down.png" alt="">
+				</div>
+				<div class="info_box__completed">
+					<span>11</span>
+					<span>Courses completed</span>
+				</div>
+				<div class="info_box_in_progress">
+					<span>4</span>
+					<span>Courses in progress</span>
+				</div>
+			</div>
 			<div class="graf">
+				<div class="graf_statistics">
+					<div class="graf_statistics__title">Your statistics</div>
+					<ul>
+						<li class="active">Learning Hours</li>
+						<li>My Courses</li>
+					</ul>
+				</div>
+				<div class="graf_period">
+					<span>Weekly</span>
+				</div>
 				<img src="src/graphic.png" alt="">
 			</div>
-			<div class="advertising"></div>
+			<div class="advertising">
+				<div class="ad_info">
+					<div class="ad_info__text">
+						<div class="ad_info__title">Learn even more!</div>
+						<div class="ad_info__subtitle">Unlock premium features only for $9.99 per month.</div>
+					</div>
+					<div class="ad_info__button">Go Premium</div>
+				</div>
+				<img src="src/brain.png" alt="" class="brain_img">
+			</div>
 		</section>
 	</main>	
 	<script src="app.js"></script>
