@@ -66,23 +66,26 @@ nav img:hover{
 
 
 section {
-/*	display: grid;
-	grid-template-areas: 
-		'a d'
-		'b e'
-		'c f';
-	grid-template-columns: 620px 450px;*/
+	display: flex;
+	grid-gap: 64px;
 }
 
 
 
 
 .hello_box{
+	width: 620px;
 	grid-area:a;
+	margin-top: 24px;
 	background: #F5F5F7;
 	border-radius: 14px;
 	display: flex;
 }
+
+.hello_box__text{
+	margin: 77px 124px 30px 31px;
+}
+
 .hello_box__title{
 	font-family: 'Baloo Bhai 2', cursive;
 	font-style: normal;
@@ -102,6 +105,7 @@ section {
 }
 
 .hello_man{
+	margin-right: 100px;
 	width: 175px;
 	height: 191px;
 	background-image: url(src/hello_man.png) ;
@@ -131,31 +135,100 @@ section {
 }
 
 
+
 .chosen_course {
+	margin-top: 24px;
 	grid-area:b;
 	display: flex;
-	height: 100px;
+
 }
 
 .chosen_course__box{
+	background: #F5F5F7;
+	border-radius: 14px;
 	display: flex;
 }
 
+.chosen_course__country {
+	max-width: 64px;
+	max-height: 64px;
+	background: #FFFFFF;
+	border-radius: 12px;
+	margin: 8px 24px 8px 8px;
+}
+
+.chosen_course__country img{
+	margin: 16px;
+}
+
+.size_icon {
+	max-height: 32px;
+}
+
+.chosen_course_name {
+	margin: 18.6px 45px 19px 0;
+}
+.chosen_course__title {
+	font-family: 'Baloo Bhai 2', cursive;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	color: #0C0B0B;
+}
+.chosen_course__subtitle {
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 15px;
+	color: #0C0B0B;
+}
 .chosen_course__percent{
-	width: 34px;
-	height: 34px;
+	margin: 21px 39px 18px 0;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
 	border: 3px solid #0C0B0B;
 	font-family: 'Roboto', sans-serif;
-	font-style: normal;
-	font-weight: 400;
 	font-size: 13px;
 	line-height: 15px;
 	color: #0C0B0B;
 	display: flex;
 	justify-content: center;
-	line-height: 34px;
+	line-height: 36px;
 }
+
+.chosen_course__continue{
+	width: 120px;
+	margin: 19px 23px 20px 0;
+	background: #0C0B0B;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 15px;
+	color: #FFFFFF;border-radius: 8px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	line-height: 40px;
+}
+
+.chosen_course__button {
+	margin: 19.9px 0 19.9px 23.6px;
+}
+
+.chosen_course__button img{
+	cursor: pointer;
+	max-width: 40px;
+}
+
+.chosen_course__button img:hover{
+	filter: drop-shadow(0px 0px 4px black);
+}
+.chosen_course__button img:first-child {
+	margin-right: 14px;
+}
+
 
 ul {
 	display: flex;
@@ -169,6 +242,10 @@ ul {
 
 .courses_block {
 	display: flex;
+}
+
+.size_icon_sub {
+	max-height: 16px;
 }
 
 .info_box{
