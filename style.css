@@ -70,12 +70,10 @@ section {
 	grid-gap: 64px;
 }
 
-
-
+/*hello_box*/
 
 .hello_box{
 	width: 620px;
-	grid-area:a;
 	margin-top: 24px;
 	background: #F5F5F7;
 	border-radius: 14px;
@@ -135,10 +133,10 @@ section {
 }
 
 
+/*chosen_course*/
 
 .chosen_course {
 	margin-top: 24px;
-	grid-area:b;
 	display: flex;
 
 }
@@ -210,11 +208,11 @@ section {
 	text-align: center;
 	display: flex;
 	justify-content: center;
-	line-height: 40px;
+	line-height: 37px;
 }
 
 .chosen_course__button {
-	margin: 19.9px 0 19.9px 23.6px;
+	margin: 16px 0 15px 23.6px;
 }
 
 .chosen_course__button img{
@@ -229,15 +227,45 @@ section {
 	margin-right: 14px;
 }
 
+/* courses */
+
+.courses {
+	margin-top: 40px;
+}
+
+.courses__title {
+	font-family: 'Baloo Bhai 2';
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 38px;
+	color: #0C0B0B;
+	margin-bottom: 16px;
+}
 
 ul {
 	display: flex;
+	grid-gap: 30px;
 	list-style-type:none;
 	padding: 0;
+	margin-bottom: 10px;
 }
 
-.courses{
-	grid-area:c;
+.inactive_li{
+	font-family: 'Baloo Bhai 2';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	color: #0C0B0B;
+	opacity: 0.5;
+}
+
+.active_li {
+	font-family: 'Baloo Bhai 2';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	color: #000;
+
 }
 
 .courses_block {
@@ -248,17 +276,18 @@ ul {
 	max-height: 16px;
 }
 
+/*info_box*/
+
 .info_box{
-	grid-area:d;
 	display: flex;
 }
 
 input {
-	border: none;
+/*	border: none;*/
 }
 
 .graf {
-	grid-area:e;
+
 }
 
 .graf img{
@@ -266,8 +295,10 @@ input {
 	height: 266px;
 }
 
+/*advertising*/
+
 .advertising {
-	grid-area:f;
+
 }
 
 .brain_img {
@@ -279,6 +310,12 @@ input {
       50%  { transform: translateY(-10px); }
       100% { transform: translateY(0); }
  }
+
+
+
+
+
+
 
  @media screen and (max-width: 900px) {
  	main {
