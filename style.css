@@ -71,7 +71,7 @@ section {
 	grid-gap: 64px;
 }
 
-/*hello_box*/
+/*------------------------------------------------------------------------------hello_box*/
 
 .hello_box{
 	box-shadow: 11px 9px 9px -3px rgba(34, 60, 80, 0.33);
@@ -135,7 +135,7 @@ section {
 }
 
 
-/*chosen_course*/
+/*------------------------------------------------------------------------chosen_course*/
 
 .chosen_course {
 	margin-top: 24px;
@@ -253,16 +253,18 @@ section {
 	margin-right: 14px;
 }
 
-/* courses */
+/* ----------------------------------------------------------------------courses */
 
 .courses {
+	height: 600px;
+	overflow-y: scroll;
 	margin-top: 40px;
 }
 
 .courses__title {
 	font-family: 'Baloo Bhai 2';
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 24px;
 	line-height: 38px;
 	color: #0C0B0B;
 	margin-bottom: 16px;
@@ -296,33 +298,235 @@ ul {
 }
 
 .courses_block {
+	margin-right: 5px;
 	display: flex;
+	background: #F5F5F7;
+	border-radius: 14px;
+	margin-bottom: 24px;
+	box-shadow: 11px 9px 9px -3px rgba(34, 60, 80, 0.33);
+}
+
+.courses__logo {
+	min-width: 64px;
+	max-width: 64px;
+	max-height: 64px;
+	background: #FFFFFF;
+	border-radius: 12px;
+	margin: 8px 24px 8px 8px;
+	box-shadow: 11px 9px 9px -3px rgba(34, 60, 80, 0.33);
+}
+
+.courses__logo  img {
+	margin: 16px;
+}
+
+.courses__course_name{
+	min-width: 180px;
+	margin: 18px 9px 19px 0;
+}
+.courses__block_title{
+	font-family: 'Baloo Bhai 2';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	color: #0C0B0B;
+}
+.courses__block_subtitle{
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 15px;
+	color: #0C0B0B;
+}
+
+.courses__duration{
+	display: flex;
+	margin-top: 33px;
+	margin-right: 30px;
+}
+
+.courses__duration p{
+	width: 65px;
+}
+
+.duration_time, .rating_score{
+	margin-left: 8px;
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 15px;
+	color: #0C0B0B;
 }
 
 .size_icon_sub {
 	max-height: 16px;
 }
 
-/*info_box*/
+.courses__rating{
+	margin-top: 32px;
+	display: flex;
+}
+
+
+.courses__button_view{
+	width: 120px;
+	margin: 19px 10px 20px 31px;
+	border: 2px solid #0C0B0B;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	color: #0C0B0B;
+	border-radius: 8px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	line-height: 37px;
+	cursor: pointer;
+	box-shadow: 11px 9px 9px -3px rgba(34, 60, 80, 0.33);
+}
+
+/*-------------------------------------------------------------------------info_box*/
 
 .info_box{
+	margin-top: 24px;
+	max-width: 440px;
+}
+
+.info_box__section_one, .info_box__section_two{
 	display: flex;
 }
 
 input {
-/*	border: none;*/
+	padding-left: 10px;
+	margin-top: 2.4%;
+	display: block;
+	width: 80%;
+	height: 70%;
+	border: none;
+	background:  #F5F5F7;
+	font-size: 17px;
+	font-family: 'Roboto'
 }
+
+.info_box__search {
+	display: flex;
+	width: 300px;
+	background: #F5F5F7;
+	border-radius: 8px;
+	margin-bottom: 23px;
+	box-shadow: 11px 9px 9px -3px rgba(34, 60, 80, 0.33);
+	margin-right: 35px;
+
+}
+.info_box__search img {
+	cursor: pointer;
+	margin: 12px 5px 11px 15px;
+	width: 20.51px;
+}
+.info_box__notification {
+	margin-bottom: 23px;
+	margin-right: 17px;
+	cursor: pointer;
+}
+.info_box__notification img {
+	width: 31px;
+	filter: drop-shadow(0px 0px 4px gray);
+}
+.info_box__profile {
+	margin-bottom: 23px;
+	cursor: pointer;
+}
+.info_box__profile  img:first-child {
+	filter: drop-shadow(0px 0px 4px gray);
+	width: 40px;
+}
+
+.info_box__profile  img:last-child {
+	margin-bottom: 18px;
+	width: 7px;
+}
+
+.info_box__completed, .info_box__in_progress {
+	box-shadow: 11px 9px 9px -3px rgba(34, 60, 80, 0.33);
+	display: flex;
+	background: #F5F5F7;
+	border-radius: 14px;	
+}
+.info_box__completed{
+	margin-right: 27px;
+}
+
+.info_box__number{
+	margin-left: 30px;
+	display: block;
+	font-family: 'Baloo Bhai 2';
+	font-size: 64px;
+	line-height: 102px;
+	color: #0C0B0B;
+}
+
+.info_box__text{
+	margin: 30px 35px 0 15px;
+	display: block;
+	max-width: 80px;
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #0C0B0B;
+}
+
+/*----------------------------------------------------------------------------graf*/
 
 .graf {
-
+	margin-top: 30px;
 }
 
-.graf img{
+.graf__title_box {
+	display: flex;
+}
+
+.graf_statistics__title{
+	font-family: 'Baloo Bhai 2';
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 38px;
+	color: #0C0B0B;
+	margin-bottom: 16px;
+}
+
+.graf_period{
+	margin-left: 128px;
+	width: 88px;
+	height: 32px;
+	margin-top: 50px;
+	display: flex;
+	background: #F5F5F7;
+	border-radius: 8px;
+	font-family: 'Roboto';
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 15px;
+	color: #0C0B0B;
+	cursor: pointer;
+	box-shadow: 11px 9px 9px -3px rgba(34, 60, 80, 0.33);
+}
+
+.graf_period p{
+	margin: 9px 5px 8px 16px;
+}
+
+.graf_period img{
+	margin: 13px 10px 13px 0;
+}
+
+.graphic{
+	margin-top: 25px;
 	width: 450px;
 	height: 266px;
 }
 
-/*advertising*/
+/*-----------------------------------------------------------------------advertising*/
 
 .advertising {
 	max-width: 440px;
@@ -379,7 +583,7 @@ input {
 
 @keyframes bounce-5 {
  	0%   { transform: translateY(0); }
-      50%  { transform: translateY(-10px); }
+      50%  { transform: translateY(-5px); }
       100% { transform: translateY(0); }
  }
 
