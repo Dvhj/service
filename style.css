@@ -12,6 +12,7 @@ main{
 
 .navbar {
 	min-width: 200px;
+	background: #fff;
 }
 
 nav {
@@ -73,6 +74,7 @@ section {
 /*hello_box*/
 
 .hello_box{
+	box-shadow: 11px 9px 9px -3px rgba(34, 60, 80, 0.33);
 	width: 620px;
 	margin-top: 24px;
 	background: #F5F5F7;
@@ -142,9 +144,11 @@ section {
 }
 
 .chosen_course__box{
+	box-shadow: 11px 9px 9px -3px rgba(34, 60, 80, 0.33);
 	background: #F5F5F7;
 	border-radius: 14px;
 	display: flex;
+	z-index: 15;
 }
 
 .chosen_course__country {
@@ -153,6 +157,7 @@ section {
 	background: #FFFFFF;
 	border-radius: 12px;
 	margin: 8px 24px 8px 8px;
+	box-shadow: 11px 9px 9px -3px rgba(34, 60, 80, 0.33);
 }
 
 .chosen_course__country img{
@@ -181,18 +186,37 @@ section {
 	color: #0C0B0B;
 }
 .chosen_course__percent{
+	position: relative;
 	margin: 21px 39px 18px 0;
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
 	border: 3px solid #0C0B0B;
-	font-family: 'Roboto', sans-serif;
-	font-size: 13px;
-	line-height: 15px;
-	color: #0C0B0B;
 	display: flex;
 	justify-content: center;
 	line-height: 36px;
+	box-shadow: 11px 9px 9px -3px rgba(34, 60, 80, 0.33);
+}
+
+.chosen_course__percent span {
+	position: absolute;
+	z-index: 5;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	color: #0C0B0B;
+}
+
+.anime {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: pink;
+	z-index: 1;
+	animation: round 2s infinite ease;
+}
+
+@keyframes change {
+
 }
 
 .chosen_course__continue{
@@ -200,15 +224,16 @@ section {
 	margin: 19px 23px 20px 0;
 	background: #0C0B0B;
 	font-family: 'Roboto', sans-serif;
-	font-style: normal;
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 13px;
-	line-height: 15px;
-	color: #FFFFFF;border-radius: 8px;
+	color: #FFFFFF;
+	border-radius: 8px;
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	line-height: 37px;
+	cursor: pointer;
+	box-shadow: 11px 9px 9px -3px rgba(34, 60, 80, 0.33);
 }
 
 .chosen_course__button {
@@ -218,10 +243,11 @@ section {
 .chosen_course__button img{
 	cursor: pointer;
 	max-width: 40px;
+	filter: drop-shadow(5px 5px 4px rgba(34, 60, 80));
 }
 
 .chosen_course__button img:hover{
-	filter: drop-shadow(0px 0px 4px black);
+	filter: drop-shadow(1px 1px 4px rgba(34, 60, 80));
 }
 .chosen_course__button img:first-child {
 	margin-right: 14px;
@@ -236,7 +262,7 @@ section {
 .courses__title {
 	font-family: 'Baloo Bhai 2';
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 16px;
 	line-height: 38px;
 	color: #0C0B0B;
 	margin-bottom: 16px;
@@ -257,6 +283,7 @@ ul {
 	line-height: 26px;
 	color: #0C0B0B;
 	opacity: 0.5;
+	cursor: pointer;
 }
 
 .active_li {
@@ -265,7 +292,7 @@ ul {
 	font-size: 16px;
 	line-height: 26px;
 	color: #000;
-
+	cursor: pointer;
 }
 
 .courses_block {
@@ -298,15 +325,60 @@ input {
 /*advertising*/
 
 .advertising {
+	max-width: 440px;
+	background: #F5F5F7;
+	border-radius: 14px;
+	display: flex;
+	margin-top: 49px;
+	box-shadow: 11px 9px 9px -3px rgba(34, 60, 80, 0.33);
+}
 
+.ad_info{
+	margin: 24px 54px 15px 23px;
+}
+.ad_info__text{}
+.ad_info__title{
+	font-family: 'Baloo Bhai 2';
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 38px;
+	color: #0C0B0B;
+	margin-bottom: 2px;
+}
+.ad_info__subtitle{
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #0C0B0B;
+	margin-bottom: 24px;
+}
+.ad_info__button{
+	box-shadow: 11px 9px 9px -3px rgba(34, 60, 80, 0.33);
+	background: #0C0B0B;
+	border-radius: 8px;
+	font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 15px;
+	color: #FFFFFF;
+	width: 120px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	line-height: 40px;
+	cursor: pointer;
 }
 
 .brain_img {
+	margin: 37px 47px 30px 0;
+	width: 125px;
+	filter: drop-shadow(0px 0px 4px gray);
 	animation: bounce-5 3s infinite ease;
 }
 
 @keyframes bounce-5 {
- 		0%   { transform: translateY(0); }
+ 	0%   { transform: translateY(0); }
       50%  { transform: translateY(-10px); }
       100% { transform: translateY(0); }
  }
@@ -319,7 +391,7 @@ input {
 
  @media screen and (max-width: 900px) {
  	main {
- 		display: block
+ 		display: block;
  	}
  	.navbar {
 		min-height: 200px;
@@ -344,5 +416,9 @@ input {
 
 	.exit {
 		margin: 48px;
+	}
+
+	section {
+		display: block;
 	}
 }
