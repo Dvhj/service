@@ -405,7 +405,8 @@ input {
 	border: none;
 	background:  #F5F5F7;
 	font-size: 17px;
-	font-family: 'Roboto'
+	font-family: 'Roboto';
+	outline:none;
 }
 
 .info_box__search {
@@ -432,6 +433,11 @@ input {
 	width: 31px;
 	filter: drop-shadow(0px 0px 4px gray);
 }
+
+.info_box__notification img:hover{
+	animation: hover 0.5s infinite;
+}
+
 .info_box__profile {
 	margin-bottom: 23px;
 	cursor: pointer;
