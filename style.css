@@ -164,7 +164,6 @@ section {
 .chosen_course {
 	margin-top: 24px;
 	display: flex;
-
 }
 
 .chosen_course__box{
@@ -172,7 +171,6 @@ section {
 	background: #F5F5F7;
 	border-radius: 14px;
 	display: flex;
-	z-index: 15;
 }
 
 .chosen_course__country {
@@ -224,7 +222,6 @@ section {
 
 .chosen_course__percent span {
 	position: absolute;
-	z-index: 5;
 	font-family: 'Roboto', sans-serif;
 	font-size: 13px;
 	color: #0C0B0B;
@@ -235,7 +232,6 @@ section {
 	height: 100%;
 	border-radius: 50%;
 	background: pink;
-	z-index: 1;
 	animation: round 2s infinite ease;
 }
 
@@ -623,36 +619,94 @@ input {
 
 
 
- @media/* screen and (max-width: 900px)*/  handheld{
+ @media screen and (max-width: 480px) {
  	main {
  		display: block;
  	}
  	.navbar {
-		min-height: 200px;
+ 		width: 100vw;
+		height: 15vh;
 	}
  	nav {
  		display: flex;
- 		position: fixed;
- 		justify-content: space-around;
+ 		position: static;
+ 		margin-top: 0;
 		width: 100%;
-		height: 132px;
+		height: 100%;
 		background-color: #0C0B0B;
-		border-radius: 24px;
+		border-radius: 0 0 24px 24px;
 		box-shadow: 25px 0px 36px -6px rgba(12, 11, 11, 0.4);
+		z-index: 100;
+ 	}
+
+ 	.logo {
+ 		max-width: 10%;
+ 	}
+ 	h1 {
+ 		margin: 0;
  	}
  	.icons {
 		display: flex;
 		flex-direction:row;
 		justify-content: space-around;
-		margin: 50px 0;
-		grid-gap: 10%;
+		margin: 0 0;
+		grid-gap: 1%;
 	}
 
+	.icons div img {
+
+		width: 50%;
+		height: 50%;
+	}
 	.exit {
 		margin: 48px;
 	}
-
 	section {
 		display: block;
+		width: 100vw
 	}
-}
+
+
+	.hello_box{
+		width: 100%;
+		margin-top: 1%;
+	}
+
+	.hello_box__text{
+		margin: 0;
+	}
+
+	.chosen_course div{
+		margin: 0;
+	}
+
+
+	.courses_block div{
+		margin: 0;
+	}
+
+	.info_box{
+		max-width: 100vw;
+	}
+
+	.info_box__section_two div, .info_box__section_two span{
+		margin: 0;
+	}
+
+	.graphic {
+		width: 100%;
+		height: 100%;
+	}
+
+	.advertising {
+		max-width: 100vw;
+	}
+	.advertising div {
+		margin: 0;
+	}
+
+	.brain_img{
+		width: 50%;
+		height: 50%;
+	}
+}	
