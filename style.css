@@ -629,6 +629,7 @@ input {
 	}
  	nav {
  		display: flex;
+ 		justify-content: space-around;
  		position: static;
  		margin-top: 0;
 		width: 100%;
@@ -650,7 +651,7 @@ input {
 		flex-direction:row;
 		justify-content: space-around;
 		margin: 0 0;
-		grid-gap: 1%;
+		grid-gap: 0;
 	}
 
 	.icons div img {
@@ -659,7 +660,7 @@ input {
 		height: 50%;
 	}
 	.exit {
-		margin: 48px;
+		margin: 0;
 	}
 	section {
 		display: block;
@@ -668,12 +669,18 @@ input {
 
 
 	.hello_box{
+		justify-content: center;
 		width: 100%;
 		margin-top: 1%;
+		height: 13vh;
 	}
 
 	.hello_box__text{
 		margin: 0;
+	}
+
+	.hello_man {
+		display: none
 	}
 
 	.chosen_course div{
@@ -710,3 +717,4 @@ input {
 		height: 50%;
 	}
 }	
+
